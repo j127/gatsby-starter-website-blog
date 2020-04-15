@@ -1,8 +1,14 @@
 # Gatsby Website Starter
 
-NOTE: this is not working yet -- there is still at least one major bug, so don't use it. :)
+Everything you need for a basic website + blog with Gatsby.js.
 
-Everything you need for a basic website + blog with Gatsby.js
+## tl;dr
+
+```text
+$ gatsby new project_name https://github.com/j127/gatsby_website_starter
+```
+
+Then edit your new site.
 
 ## Instructions
 
