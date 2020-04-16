@@ -5,6 +5,8 @@ const DESCRIPTION = "A website";
 const AUTHOR_NAME = "Web Developer";
 const TWITTER_USERNAME = "codeselfstudy";
 const YOUTUBE_URL = "https://www.youtube.com/codeselfstudy";
+const PRODUCTION_URL = "https://gatsby-webiste-starter.netlify.com/";
+const DEVELOPMENT_URL = "http://localhost:8000/";
 
 // Read the settings below and make sure that they are correct for your
 // site.
@@ -17,6 +19,10 @@ module.exports = {
             twitter: TWITTER_USERNAME,
             youtube: YOUTUBE_URL,
         },
+        siteUrl:
+            process.env.NODE_ENV === "production"
+                ? PRODUCTION_URL
+                : DEVELOPMENT_URL,
     },
     plugins: [
         // This loads the blog posts
