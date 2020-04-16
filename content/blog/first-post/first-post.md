@@ -11,7 +11,7 @@ Amet itaque aut dicta nostrum enim odit. Laudantium magni illum voluptas ab anim
 ## More Formatting Examples
 
 ```javascript
-const x = (y) => `fu${[...(y)+""].filter(n=>n!=="a").join("")}y`;
+const x = y => `fu${[...(y)+""].filter(n=>n!=="a").join("")}y`;
 console.log(x(0/0));
 ```
 
