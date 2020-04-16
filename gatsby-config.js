@@ -5,7 +5,7 @@ const DESCRIPTION = "A website";
 const AUTHOR_NAME = "Web Developer";
 const TWITTER_USERNAME = "codeselfstudy";
 const YOUTUBE_URL = "https://www.youtube.com/codeselfstudy";
-const PRODUCTION_URL = "https://gatsby-webiste-starter.netlify.com/";
+const PRODUCTION_URL = "https://gatsby-website-starter.netlify.app/";
 const DEVELOPMENT_URL = "http://localhost:8000/";
 
 // Read the settings below and make sure that they are correct for your
