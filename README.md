@@ -1,6 +1,6 @@
 # Gatsby Website Starter
 
-Everything you need for a basic website + blog with Gatsby.js.
+Everything you need for a basic website + blog with Gatsby.js. ([preview](https://gatsby-website-starter.netlify.app/))
 
 ## tl;dr
 
