@@ -98,6 +98,7 @@ module.exports = {
             options: {
                 printRejected: true,
                 whitelist: ["blockquote"],
+                whitelistPatternsChildren: [/^token/, /^pre/, /^code/],
                 // develop: true, // Enable while using `gatsby develop`
             },
         },
