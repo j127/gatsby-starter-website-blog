@@ -6,7 +6,7 @@ import SEO from "../components/seo/seo";
 const AboutPage = () => (
     <Layout>
         <SEO title="About Page" />
-        <h1>About Page</h1>
+        <h1 className="title is-1">About Page</h1>
         <p>
             Ipsum reiciendis debitis totam amet dolorum quaerat? Porro
             repellendus aliquam corrupti iure aspernatur Autem provident tenetur
