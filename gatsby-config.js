@@ -97,7 +97,16 @@ module.exports = {
             resolve: `gatsby-plugin-purgecss`,
             options: {
                 printRejected: true,
-                whitelist: ["blockquote"],
+                whitelist: [
+                    "blockquote",
+                    "table",
+                    "th",
+                    "tr",
+                    "td",
+                    "tbody",
+                    "thead",
+                    "content",
+                ],
                 whitelistPatternsChildren: [/^token/, /^pre/, /^code/],
                 // develop: true, // Enable while using `gatsby develop`
             },
