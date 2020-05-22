@@ -15,17 +15,22 @@ const BlogPostTemplate = ({ data, pageContext, location }) => {
                 title={post.frontmatter.title}
                 description={post.frontmatter.description || post.excerpt}
             />
-            <article>
+            <article className="blog-post">
                 <header>
                     <h1>{post.frontmatter.title}</h1>
-                    <p>{post.frontmatter.date}</p>
+                    <div className="metadata">
+                        <p>
+                            Posted by {post.frontmatter.author} on{" "}
+                            {post.frontmatter.date}
+                        </p>
+                    </div>
                 </header>
                 <section dangerouslySetInnerHTML={{ __html: post.html }} />
                 <hr />
                 <footer>{/* TODO: put author name and metadata here */}</footer>
             </article>
 
-            <nav>
+            <nav class="blog-post-nav">
                 <ul>
                     {previous && (
                         <li>
@@ -64,6 +69,7 @@ export const pageQuery = graphql`
                 title
                 date(formatString: "MMMM DD, YYYY")
                 description
+                author
             }
         }
     }
