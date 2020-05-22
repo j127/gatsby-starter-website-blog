@@ -35,3 +35,35 @@
     background: inherit;
     margin: inherit;
 }
+
+.blog-list {
+    h2.title {
+        margin-bottom: 0.1em;
+    }
+
+    .metadata {
+        margin-bottom: 17px;
+        color: #777;
+    }
+
+    article {
+        margin-bottom: 27px;
+    }
+}
+
+.blog-post {
+    h1 {
+        margin-bottom: 0.1em;
+    }
+
+    .metadata {
+        margin-bottom: 17px;
+        color: #777;
+    }
+}
+
+.blog-post-nav {
+    ul {
+        list-style: none;
+    }
+}
