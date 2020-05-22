@@ -19,6 +19,7 @@ exports.createPages = async ({ graphql, actions }) => {
                             }
                             frontmatter {
                                 title
+                                slug
                             }
                         }
                     }
@@ -53,7 +54,9 @@ exports.onCreateNode = ({ node, actions, getNode }) => {
     const { createNodeField } = actions;
 
     if (node.internal.type === "MarkdownRemark") {
-        const value = createFilePath({ node, getNode });
+        // The path is built from the slug in the blog post frontmatter.
+        const value = `/blog/${node.frontmatter.slug}/`;
+
         createNodeField({
             name: "slug",
             node,
