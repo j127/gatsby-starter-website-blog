@@ -1,6 +1,8 @@
 ---
 title: Another Post
 date: "2020-04-14T00:38:21.102Z"
+slug: "another-post"
+author: Bob
 description: "This is another post"
 ---
 

@@ -1,6 +1,8 @@
 ---
 title: First Post
 date: "2020-04-14T00:33:58.102Z"
+slug: "first-post"
+author: Alice
 description: "A description for the first post"
 ---
 
