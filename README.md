@@ -49,3 +49,15 @@ $ npm uninstall -S bulma
 Then search the files for any mention of "bulma" and delete those imports.
 
 Override Bulma variables in the `src/styles/_variables.scss` file. See the notes in the files in the `src/styles` directory.
+
+#### Tips
+
+If you need a responsive table in a blog post (written with markdown), wrap the markdown table with a [`table-container` div](https://bulma.io/documentation/elements/table/#table-container) like this:
+
+```
+<div class="table-container">
+
+    <!-- table markdown goes here, padded with empty lines above and below -->
+
+</div>
+```
