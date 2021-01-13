@@ -31,7 +31,7 @@
     "homepage": "https://github.com/j127/gatsby_website_starter#readme",
     "private": true,
     "dependencies": {
-        "axios": "^0.19.2",
+        "axios": "^0.21.1",
         "bulma": "^0.8.2",
         "gatsby": "^2.30.1",
         "gatsby-image": "^2.9.0",
