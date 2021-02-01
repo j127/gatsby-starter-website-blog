@@ -64,68 +64,25 @@ If you need a responsive table in a blog post (written with markdown), wrap the 
 
 ### Creating Blog Posts
 
-To make it easier to create new blog posts, you can create a script.
+To make it easier to create new blog posts, there is a generator script named `g`.
 
-If you have Ruby installed, do:
+To use it, make sure you have Ruby and [`bundler`](https://bundler.io/) installed.
 
 ```text
-$ bundle init
-$ gem install slugify
-$ touch g
-$ chmod u+x g
+$ bundle install
 ```
 
-Then copy this code into the new file named `g` that was created by the above commands:
+(If `bundler` isn't installed, you can install it with `gem install bundler` and then try running `bundle install` again.)
+
+Look in the `g` script for the line that looks like this:
 
 ```ruby
-#!/usr/bin/env ruby
-
-# A script to create new posts
-# Don't forget to `bundle install`
-#
-# Usage:
-#
-# ./g new 'This Is the Title of a Blog Post'
-
-require 'slugify'
-
-AUTHOR = 'Your Name'
-CONTENT_DIR = './drafts'
-
-def new_post(title, slug=nil, author=AUTHOR)
-  date_string = Time.now.strftime("%Y-%m-%d")
-  slug = title.slugify() unless slug
-
-  content = <<~HEREDOC
-  ---
-  title: #{title}
-  date: "#{date_string}"
-  author: #{author}
-  slug: "#{slug}"
-  description: ""
-  ---
-  HEREDOC
-
-  dirname = "#{CONTENT_DIR}/#{date_string}-#{slug}"
-  Dir.mkdir(dirname)
-  File.open("#{dirname}/index.md", "w") { |f| f.write(content) }
-  p "created new blog post at #{dirname}"
-end
-
-command = ARGV[0]
-title = ARGV[1]
-
-case command
-when 'new'
-  new_post(title)
-else
-  p 'please enter a valid command'
-end
+AUTHOR = '' || ENV["USER"]
 ```
 
-Don't forget to change the script so that your name is in the correct place (`AUTHOR`).
+Put your author name inside the single quotes.
 
-You can then create new blog posts by running this command:
+You can now generate skeletons for new blog posts by running this command:
 
 ```text
 $ ./g new 'This Is the Title of a Blog Post'
