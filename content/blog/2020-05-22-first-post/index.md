@@ -13,11 +13,11 @@ Amet itaque aut dicta nostrum enim odit. Laudantium magni illum voluptas ab anim
 ## More Formatting Examples
 
 ```javascript
-const x = y => `fu${[...(y)+""].filter(n=>n!=="a").join("")}y`;
-console.log(x(0/0));
+const x = (y) => `fu${[...(y + "")].filter((n) => n !== "a").join("")}y`;
+console.log(x(0 / 0));
 ```
 
 Adipisicing maiores impedit eligendi excepturi deserunt tempore eius fugit! Laboriosam animi qui nesciunt ipsa dolorum Autem blanditiis excepturi modi fugit quibusdam enim ex dolor Iusto perferendis nemo elit voluptatum et
 
-- item
-- item
+-   item
+-   item

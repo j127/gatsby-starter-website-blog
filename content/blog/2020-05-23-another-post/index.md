@@ -6,6 +6,6 @@ author: Bob
 description: "This is another post"
 ---
 
-[Code Self Study](https://codeselfstudy.com/) hic cum a libero. Magnam aut ipsam magnam perferendis non Cum sed eos tenetur accusantium dignissimos Excepturi eos tempore ea cum autem. Porro quidem dicta deleniti *repudiandae vitae*.
+[Code Self Study](https://codeselfstudy.com/) hic cum a libero. Magnam aut ipsam magnam perferendis non Cum sed eos tenetur accusantium dignissimos Excepturi eos tempore ea cum autem. Porro quidem dicta deleniti _repudiandae vitae_.
 
 ![Another cat](./cat-2.jpg)
