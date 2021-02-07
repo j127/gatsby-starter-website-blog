@@ -4,10 +4,10 @@
     "description": "Everything you need for a basic website + blog with Gatsby.js",
     "main": "index.js",
     "scripts": {
-        "format": "prettier \"**/*.{js,css,scss,html,jsx,json,md}\"",
+        "format": "prettier \"**/*.{js,css,scss,html,jsx,json,md}\" --write",
         "develop": "gatsby develop",
         "start": "npm run develop",
-        "build": "gatsby build",
+        "build": "npm run clean && gatsby build",
         "serve": "gatsby serve",
         "clean": "gatsby clean",
         "test": "TODO"
