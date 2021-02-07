@@ -17,7 +17,7 @@ const BlogPage = ({ data, location }) => {
                     const title = node.frontmatter.title || node.fields.slug;
 
                     return (
-                        <article key={node.fields.slug}>
+                        <article className="box" key={node.fields.slug}>
                             <header>
                                 <h2 className="title is-2">
                                     <Link to={node.fields.slug}>{title}</Link>

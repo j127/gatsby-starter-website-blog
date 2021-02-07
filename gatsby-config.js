@@ -45,9 +45,14 @@ module.exports = {
             options: {
                 plugins: [
                     {
+                        // For more image-loading options, see the docs here:
+                        // https://www.gatsbyjs.com/plugins/gatsby-remark-images/
                         resolve: `gatsby-remark-images`,
                         options: {
-                            maxWidth: 590,
+                            maxWidth: 700,
+                            wrapperStyle:
+                                "border: 1px solid #666; margin-left: 0 !important; margin-right: 0 !important; border-radius: 5px;",
+                            // tracedSVG: true,
                         },
                     },
                     {

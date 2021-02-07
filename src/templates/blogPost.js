@@ -30,7 +30,7 @@ const BlogPostTemplate = ({ data, pageContext, location }) => {
                 <footer>{/* TODO: put author name and metadata here */}</footer>
             </article>
 
-            <nav class="blog-post-nav">
+            <nav className="blog-post-nav">
                 <ul>
                     {previous && (
                         <li>
