@@ -92,6 +92,14 @@ $ ./g new 'This Is the Title of a Blog Post'
 
 Out of the box, this template comes with an RSS feed for the blog at `/rss.xml`. To add additional RSS feeds, see [the docs](https://www.gatsbyjs.com/docs/how-to/adding-common-features/adding-an-rss-feed/).
 
-## Code Formatting
+### Code Formatting
 
 The code can be auto-formatted with Prettier.js. Just type the command `npm run format` or have your editor auto-format with prettier on save. To change the code style, edit the files `.prettierrc` and `.editorconfig`. (Search online to see how to use those files, if you aren't familiar with them.)
+
+### Note to Self
+
+This kind of site can be deployed on Nelify using their Github connector or with the [Netlify CLI](https://forum.codeselfstudy.com/t/netlify-cli-quickstart/1210). For example, [the demo site](https://gatsby-website-starter.netlify.app/) for this theme is deployed with this command:
+
+```text
+$ npm run build && netlify deploy --prod --dir=public
+```
