@@ -5,7 +5,7 @@ import Layout from "../components/layout/layout";
 import SEO from "../components/seo/seo";
 
 const BlogPage = ({ data, location }) => {
-    const siteTitle = data.site.siteMetadata.title;
+    // const siteTitle = data.site.siteMetadata.title;
     const posts = data.allMarkdownRemark.edges;
     return (
         <Layout>

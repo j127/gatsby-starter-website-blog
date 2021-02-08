@@ -24,7 +24,7 @@ const Navbar = ({ siteTitle }) => {
                     <div
                         className="navbar-burger burger"
                         role="button"
-                        className="navbar-burger burger"
+                        tabIndex="0"
                         onClick={toggleNav}
                         aria-label="menu"
                         aria-expanded="false"
