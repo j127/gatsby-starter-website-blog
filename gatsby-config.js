@@ -116,5 +116,6 @@ module.exports = {
                 // develop: true, // Enable while using `gatsby develop`
             },
         },
+        `gatsby-plugin-feed`,
     ],
 };

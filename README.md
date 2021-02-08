@@ -87,3 +87,11 @@ You can now generate skeletons for new blog posts by running this command:
 ```text
 $ ./g new 'This Is the Title of a Blog Post'
 ```
+
+### RSS Feeds
+
+Out of the box, this template comes with an RSS feed for the blog at `/rss.xml`. To add additional RSS feeds, see [the docs](https://www.gatsbyjs.com/docs/how-to/adding-common-features/adding-an-rss-feed/).
+
+## Code Formatting
+
+The code can be auto-formatted with Prettier.js. Just type the command `npm run format` or have your editor auto-format with prettier on save. To change the code style, edit the files `.prettierrc` and `.editorconfig`. (Search online to see how to use those files, if you aren't familiar with them.)
