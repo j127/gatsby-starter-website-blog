@@ -12,6 +12,12 @@ const IndexPage = () => (
             <div className="column is-two-thirds">
                 <p className="subtitle">Add your home page content here.</p>
                 <p>
+                    Get the template{" "}
+                    <a href="https://github.com/j127/gatsby_website_starter">
+                        here
+                    </a>
+                </p>
+                <p>
                     Ipsum similique ab nostrum maxime harum Eum accusantium
                     numquam possimus autem facilis Totam cupiditate aliquid
                     illum aperiam recusandae Esse quaerat consectetur distinctio
@@ -33,7 +39,10 @@ const IndexPage = () => (
         <div className="columns">
             <div className="column">
                 <h3 className="title is-3">Header</h3>
-                <img alt="plaeholder kitten" src="https://placekitten.com/300/150" />
+                <img
+                    alt="placeholder kitten"
+                    src="https://placekitten.com/300/150"
+                />
                 <p>
                     Ipsum cupiditate velit recusandae libero cumque Dolore
                     itaque magnam commodi autem iure!
@@ -46,7 +55,10 @@ const IndexPage = () => (
 
             <div className="column">
                 <h3 className="title is-3">Header</h3>
-                <img alt="placeholder kitten" src="https://placekitten.com/300/150" />
+                <img
+                    alt="placeholder kitten"
+                    src="https://placekitten.com/300/150"
+                />
                 <p>
                     Ipsum cupiditate velit recusandae libero cumque Dolore
                     itaque magnam commodi autem iure!
@@ -58,7 +70,10 @@ const IndexPage = () => (
 
             <div className="column">
                 <h3 className="title is-3">Header</h3>
-                <img alt="placeholder kitten" src="https://placekitten.com/300/150" />
+                <img
+                    alt="placeholder kitten"
+                    src="https://placekitten.com/300/150"
+                />
                 <p>
                     Ipsum cupiditate velit recusandae libero cumque Dolore
                     itaque magnam commodi autem iure!
@@ -71,7 +86,10 @@ const IndexPage = () => (
         <div className="columns">
             <div className="column">
                 <h3 className="title is-3">Header</h3>
-                <img alt="placeholder kitten" src="https://placekitten.com/300/150" />
+                <img
+                    alt="placeholder kitten"
+                    src="https://placekitten.com/300/150"
+                />
                 <p>
                     Ipsum cupiditate velit recusandae libero cumque Dolore
                     itaque magnam commodi autem iure!
@@ -84,7 +102,10 @@ const IndexPage = () => (
 
             <div className="column">
                 <h3 className="title is-3">Header</h3>
-                <img alt="placeholder kitten" src="https://placekitten.com/300/150" />
+                <img
+                    alt="placeholder kitten"
+                    src="https://placekitten.com/300/150"
+                />
                 <p>
                     Ipsum cupiditate velit recusandae libero cumque Dolore
                     itaque magnam commodi autem iure!
@@ -96,7 +117,10 @@ const IndexPage = () => (
 
             <div className="column">
                 <h3 className="title is-3">Header</h3>
-                <img alt="placeholder kitten" src="https://placekitten.com/300/150" />
+                <img
+                    alt="placeholder kitten"
+                    src="https://placekitten.com/300/150"
+                />
                 <p>
                     Ipsum cupiditate velit recusandae libero cumque Dolore
                     itaque magnam commodi autem iure!
