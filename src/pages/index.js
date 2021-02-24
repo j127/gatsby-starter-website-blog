@@ -33,7 +33,12 @@ const IndexPage = () => (
                 </p>
             </div>
             <div className="column">
-                <img src="https://placekitten.com/300/300" alt="cat" />
+                <img
+                    width="300"
+                    height="300"
+                    src="https://placekitten.com/300/300"
+                    alt="cat"
+                />
             </div>
         </div>
         <h2 className="title is-2">Portfolio</h2>
@@ -41,6 +46,8 @@ const IndexPage = () => (
             <div className="column">
                 <h3 className="title is-3">Header</h3>
                 <img
+                    width="300"
+                    height="150"
                     alt="placeholder kitten"
                     src="https://placekitten.com/300/150"
                 />
@@ -57,6 +64,8 @@ const IndexPage = () => (
             <div className="column">
                 <h3 className="title is-3">Header</h3>
                 <img
+                    width="300"
+                    height="150"
                     alt="placeholder kitten"
                     src="https://placekitten.com/300/150"
                 />
@@ -72,6 +81,8 @@ const IndexPage = () => (
             <div className="column">
                 <h3 className="title is-3">Header</h3>
                 <img
+                    width="300"
+                    height="150"
                     alt="placeholder kitten"
                     src="https://placekitten.com/300/150"
                 />
@@ -88,6 +99,8 @@ const IndexPage = () => (
             <div className="column">
                 <h3 className="title is-3">Header</h3>
                 <img
+                    width="300"
+                    height="150"
                     alt="placeholder kitten"
                     src="https://placekitten.com/300/150"
                 />
@@ -104,6 +117,8 @@ const IndexPage = () => (
             <div className="column">
                 <h3 className="title is-3">Header</h3>
                 <img
+                    width="300"
+                    height="150"
                     alt="placeholder kitten"
                     src="https://placekitten.com/300/150"
                 />
@@ -119,6 +134,8 @@ const IndexPage = () => (
             <div className="column">
                 <h3 className="title is-3">Header</h3>
                 <img
+                    width="300"
+                    height="150"
                     alt="placeholder kitten"
                     src="https://placekitten.com/300/150"
                 />
