@@ -12,10 +12,11 @@ const IndexPage = () => (
             <div className="column is-two-thirds">
                 <p className="subtitle">Add your home page content here.</p>
                 <p>
-                    Get the template{" "}
+                    Get this Gatsby starter template on Github{" "}
                     <a href="https://github.com/j127/gatsby_website_starter">
                         here
                     </a>
+                    .
                 </p>
                 <p>
                     Ipsum similique ab nostrum maxime harum Eum accusantium
