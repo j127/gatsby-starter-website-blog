@@ -62,6 +62,10 @@ If you need a responsive table in a blog post (written with markdown), wrap the 
 </div>
 ```
 
+### Sourcemaps
+
+Sourcemaps are removed by default (see [here](https://forum.codeselfstudy.com/t/how-to-avoid-publishing-your-frontend-code-and-comments-with-react/2418)). If you want to add sourcemaps in production, then remove the `gatsby-plugin-no-sourcemaps` plugin from `gatsby-config.js` file.
+
 ### Creating Blog Posts
 
 To make it easier to create new blog posts, there is a generator script named `g`.
