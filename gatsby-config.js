@@ -68,6 +68,9 @@ module.exports = {
             },
         },
         "gatsby-plugin-feed",
+        {
+            resolve: "gatsby-plugin-no-sourcemaps",
+        },
         "gatsby-plugin-react-helmet",
         {
             resolve: "gatsby-source-filesystem",
