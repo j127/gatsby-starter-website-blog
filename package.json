@@ -1,6 +1,6 @@
 {
     "name": "@j127/gatsby_website_starter",
-    "version": "0.2.0",
+    "version": "0.3.0",
     "description": "Everything you need for a basic website + blog with Gatsby.js",
     "main": "index.js",
     "scripts": {
@@ -20,7 +20,13 @@
         "type": "git",
         "url": "git+https://github.com/j127/gatsby_website_starter.git"
     },
-    "keywords": ["gatsby", "web", "javascript", "gatsby-starter", "react"],
+    "keywords": [
+        "gatsby",
+        "web",
+        "javascript",
+        "gatsby-starter",
+        "react"
+    ],
     "author": "J. Cohen <hostelmarketing@gmail.com> (https://github.com/j127)",
     "license": "BSD-3-Clause",
     "bugs": {
