@@ -2,10 +2,10 @@
 // own local styles.
 
 // Customize Bulma variables in the _variables.scss file
-@import "./variables.scss";
+@use "./variables.scss";
 
 // Replace Bulma with Bootstrap or whatever you want.
-@import "~bulma/bulma.sass";
+@use "~bulma/bulma.sass";
 
 // Use whatever fonts you want. Fira Code will use font ligatures. If
 // you don't want that, change the text "Fira+Code" to "Source Code Pro"
