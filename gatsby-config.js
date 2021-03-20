@@ -67,7 +67,6 @@ module.exports = {
                 ],
             },
         },
-        "gatsby-plugin-feed",
         {
             resolve: "gatsby-plugin-no-sourcemaps",
         },
