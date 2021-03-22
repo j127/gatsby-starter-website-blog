@@ -6,7 +6,7 @@ import SEO from "../components/seo/seo";
 
 const IndexPage = () => (
     <Layout>
-        <SEO title="Home Page" />
+        <SEO title="Home Page" isHomepage={true} />
         <h1 className="title is-1">Hello World</h1>
         <div className="columns">
             <div className="column is-two-thirds">

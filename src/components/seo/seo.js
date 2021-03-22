@@ -2,7 +2,7 @@ import React from "react";
 import Helmet from "react-helmet";
 import { useStaticQuery, graphql } from "gatsby";
 
-const SEO = ({ title, description, lang = "en", meta = [] }) => {
+const SEO = ({ title, description, isHomepage, lang = "en", meta = [] }) => {
     const { site } = useStaticQuery(
         graphql`
             query {
@@ -24,11 +24,18 @@ const SEO = ({ title, description, lang = "en", meta = [] }) => {
 
     const metaDescription = description || site.siteMetadata.description;
 
+    // The site name should come first in the HTML `<title>` only on the
+    // homepage.
+    const titleTemplate =
+        isHomepage === true
+            ? `${site.siteMetadata.title} | %s`
+            : `%s | ${site.siteMetadata.title}`;
+
     return (
         <Helmet
             htmlAttributes={{ lang }}
             title={title}
-            titleTemplate={`%s | ${site.siteMetadata.title}`}
+            titleTemplate={titleTemplate}
             meta={[
                 {
                     name: "description",
