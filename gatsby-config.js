@@ -3,9 +3,9 @@ const TITLE = "My Website";
 const SHORT_NAME = "GatsbyWebsiteStarter";
 const DESCRIPTION = "A website";
 const AUTHOR_NAME = "Web Developer";
-const TWITTER_USERNAME = "codeselfstudy";
-const YOUTUBE_URL = "https://www.youtube.com/codeselfstudy";
-const PRODUCTION_URL = "https://gatsby-website-starter.netlify.app/";
+const TWITTER_USERNAME = "";
+const YOUTUBE_URL = "https://www.youtube.com/";
+const PRODUCTION_URL = "https://example.com/";
 const DEVELOPMENT_URL = "http://localhost:8000/";
 
 // Read the settings below and make sure that they are correct for your
