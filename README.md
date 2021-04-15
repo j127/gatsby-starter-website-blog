@@ -2,6 +2,8 @@
 
 Everything you need for a basic website + blog with Gatsby.js. ([preview](https://gatsby-website-starter.netlify.app/))
 
+This has been updated to Gatsby 3. It uses TypeScript now. TypeScript is JavaScript with a few extra features that help reduce bugs. If you haven't used TypeScript before, check out the [getting started guide](https://www.typescriptlang.org/docs/handbook) and [Learn TypeScript in Y Minutes](https://learnxinyminutes.com/docs/typescript/).
+
 ## tl;dr
 
 ```text
