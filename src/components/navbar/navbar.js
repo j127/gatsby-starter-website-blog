@@ -14,6 +14,8 @@ const Navbar = ({ siteTitle }) => {
     }
 
     function handleKeyDown(e) {
+        // The next line should go next to the onClick
+        // onKeyDown={handleKeyDown}
         // TODO: figure out the ideal way to make a keyboard shortcut for accessibility.
         // toggleNav(e);
     }
@@ -31,7 +33,6 @@ const Navbar = ({ siteTitle }) => {
                         role="button"
                         tabIndex="0"
                         onClick={toggleNav}
-                        onKeyDown={handleKeyDown}
                         aria-label="menu"
                         aria-expanded="false"
                         data-target="nav-target"
