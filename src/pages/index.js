@@ -1,5 +1,5 @@
 import React from "react";
-// import { Link } from "gatsby";
+import { Link } from "gatsby";
 
 import Layout from "../components/layout/Layout";
 import SEO from "../components/seo/SEO";
@@ -56,9 +56,9 @@ const IndexPage = () => (
                     itaque magnam commodi autem iure!
                 </p>
                 {/* If you're linking interally, use `Link` instead of `a` */}
-                <a href="#" className="button">
+                <Link to="/blog/" className="button">
                     Read More
-                </a>
+                </Link>
             </div>
 
             <div className="column">
@@ -73,9 +73,9 @@ const IndexPage = () => (
                     Ipsum cupiditate velit recusandae libero cumque Dolore
                     itaque magnam commodi autem iure!
                 </p>
-                <a href="#" className="button">
+                <Link to="/blog/" className="button">
                     Read More
-                </a>
+                </Link>
             </div>
 
             <div className="column">
@@ -90,9 +90,9 @@ const IndexPage = () => (
                     Ipsum cupiditate velit recusandae libero cumque Dolore
                     itaque magnam commodi autem iure!
                 </p>
-                <a href="#" className="button">
+                <Link to="/blog/" className="button">
                     Read More
-                </a>
+                </Link>
             </div>
         </div>
         <div className="columns">
@@ -109,9 +109,9 @@ const IndexPage = () => (
                     itaque magnam commodi autem iure!
                 </p>
                 {/* If you're linking interally, use `Link` instead of `a` */}
-                <a href="#" className="button">
+                <Link to="/blog/" className="button">
                     Read More
-                </a>
+                </Link>
             </div>
 
             <div className="column">
@@ -126,9 +126,9 @@ const IndexPage = () => (
                     Ipsum cupiditate velit recusandae libero cumque Dolore
                     itaque magnam commodi autem iure!
                 </p>
-                <a href="#" className="button">
+                <Link to="/blog/" className="button">
                     Read More
-                </a>
+                </Link>
             </div>
 
             <div className="column">
@@ -143,9 +143,9 @@ const IndexPage = () => (
                     Ipsum cupiditate velit recusandae libero cumque Dolore
                     itaque magnam commodi autem iure!
                 </p>
-                <a href="#" className="button">
+                <Link to="/blog/" className="button">
                     Read More
-                </a>
+                </Link>
             </div>
         </div>
     </Layout>

@@ -13,6 +13,11 @@ const Navbar = ({ siteTitle }) => {
         console.log("isExpanded is now", isExpanded);
     }
 
+    function handleKeyDown(e) {
+        // TODO: figure out the ideal way to make a keyboard shortcut for accessibility.
+        // toggleNav(e);
+    }
+
     return (
         <nav className="navbar is-dark">
             <div className="container">
@@ -26,6 +31,7 @@ const Navbar = ({ siteTitle }) => {
                         role="button"
                         tabIndex="0"
                         onClick={toggleNav}
+                        onKeyDown={handleKeyDown}
                         aria-label="menu"
                         aria-expanded="false"
                         data-target="nav-target"
