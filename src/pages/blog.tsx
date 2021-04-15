@@ -1,10 +1,11 @@
 import React from "react";
 import { Link, graphql } from "gatsby";
+// import { PageProps } from "gatsby";
 
-import Layout from "../components/layout/layout";
-import SEO from "../components/seo/seo";
+import Layout from "../components/layout/Layout";
+import SEO from "../components/seo/SEO";
 
-const BlogPage = ({ data, location }) => {
+export default function BlogPage({ data }) {
     // const siteTitle = data.site.siteMetadata.title;
     const posts = data.allMarkdownRemark.edges;
     return (
@@ -41,9 +42,7 @@ const BlogPage = ({ data, location }) => {
             </div>
         </Layout>
     );
-};
-
-export default BlogPage;
+}
 
 export const pageQuery = graphql`
     query {

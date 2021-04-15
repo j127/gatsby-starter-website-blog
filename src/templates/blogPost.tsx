@@ -1,8 +1,8 @@
 import React from "react";
 import { Link, graphql } from "gatsby";
 
-import Layout from "../components/layout/layout";
-import SEO from "../components/seo/seo";
+import Layout from "../components/layout/Layout";
+import SEO from "../components/seo/SEO";
 
 const BlogPostTemplate = ({ data, pageContext, location }) => {
     const post = data.markdownRemark;
@@ -10,7 +10,7 @@ const BlogPostTemplate = ({ data, pageContext, location }) => {
     const { previous, next } = pageContext;
 
     return (
-        <Layout location={location} title={siteTitle}>
+        <Layout location={location}>
             <SEO
                 title={post.frontmatter.title}
                 description={post.frontmatter.description || post.excerpt}

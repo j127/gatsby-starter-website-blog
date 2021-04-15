@@ -2,6 +2,16 @@
 
 Everything you need for a basic website + blog with Gatsby.js. ([preview](https://gatsby-website-starter.netlify.app/))
 
+**Requirements:** Node 12.13.0 or above.
+
+This has been updated to Gatsby 3. If you notice any bugs with this new Gatsby 3 version, please open a pull request. The migration docs are [here](https://www.gatsbyjs.com/docs/reference/release-notes/migrating-from-v2-to-v3/).
+
+It uses TypeScript now. TypeScript is JavaScript with a few extra features that help reduce bugs. You can write plain JavaScript if you want, even though the files have `.tsx` extensions.
+
+If you haven't used TypeScript before, check out the [getting started guide](https://www.typescriptlang.org/docs/handbook) and [Learn TypeScript in Y Minutes](https://learnxinyminutes.com/docs/typescript/). The Gatsby docs also have a page about [using TypeScript with Gatsby](https://www.gatsbyjs.com/docs/how-to/custom-configuration/typescript/).
+
+To customize the TypeScript configuration, see [this page](https://www.gatsbyjs.com/plugins/gatsby-plugin-typescript/).
+
 ## tl;dr
 
 ```text

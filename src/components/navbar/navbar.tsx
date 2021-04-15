@@ -7,10 +7,17 @@ const Navbar = ({ siteTitle }) => {
     // This toggles the navbar when it's collapsed
     const [isExpanded, setIsExpanded] = useState(false);
 
-    function toggleNav(e) {
+    function toggleNav(e: React.MouseEvent) {
         e.preventDefault();
         setIsExpanded(isExpanded ? false : true);
         console.log("isExpanded is now", isExpanded);
+    }
+
+    function handleKeyDown() {
+        // The next line should go next to the onClick
+        // onKeyDown={handleKeyDown}
+        // TODO: figure out the ideal way to make a keyboard shortcut for accessibility.
+        // toggleNav(e);
     }
 
     return (
@@ -24,7 +31,7 @@ const Navbar = ({ siteTitle }) => {
                     <div
                         className="navbar-burger burger"
                         role="button"
-                        tabIndex="0"
+                        tabIndex={0}
                         onClick={toggleNav}
                         aria-label="menu"
                         aria-expanded="false"
