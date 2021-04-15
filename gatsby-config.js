@@ -104,7 +104,13 @@ module.exports = {
         },
         "gatsby-transformer-sharp",
         "gatsby-plugin-sharp",
-        "gatsby-plugin-sass",
+        `gatsby-plugin-sass`,
+        {
+            resolve: `gatsby-plugin-sass`,
+            options: {
+                // See https://www.gatsbyjs.com/plugins/gatsby-plugin-sass/
+            },
+        },
         {
             resolve: "gatsby-plugin-manifest",
             options: {

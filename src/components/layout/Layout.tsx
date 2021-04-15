@@ -1,5 +1,6 @@
 import React from "react";
 import { useStaticQuery, graphql } from "gatsby";
+import { WindowLocation } from "@reach/router";
 
 import Navbar from "../navbar/navbar";
 import Footer from "../footer/footer";
@@ -7,7 +8,14 @@ import Footer from "../footer/footer";
 import "../../styles/main.scss";
 // import "./layout.scss";
 
-const Layout = ({ children }) => {
+// TODO: this might need updating
+interface ILayoutProps {
+    location: WindowLocation;
+    // title: string;
+    children?: any;
+}
+
+export default function Layout({ children }: ILayoutProps) {
     const data = useStaticQuery(graphql`
         query SiteTitleQuery {
             site {
@@ -29,6 +37,4 @@ const Layout = ({ children }) => {
             <Footer siteTitle={data.site.siteMetadata.title} />
         </>
     );
-};
-
-export default Layout;
+}
