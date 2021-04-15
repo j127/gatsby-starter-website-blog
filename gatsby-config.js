@@ -8,6 +8,10 @@ const YOUTUBE_URL = "https://www.youtube.com/";
 const PRODUCTION_URL = "https://example.com/";
 const DEVELOPMENT_URL = "http://localhost:8000/";
 
+// If you add the Google Analytics ID here (G-XXXXXXXXXX), also
+// uncomment the related section below.
+// const GOOGLE_ANALYTICS_ID = "";
+
 // Read the settings below and make sure that they are correct for your
 // site.
 module.exports = {
@@ -70,6 +74,26 @@ module.exports = {
         {
             resolve: "gatsby-plugin-no-sourcemaps",
         },
+        // Uncomment the section below (and the related selection at the
+        // top) to enable Google Analytics.
+        //
+        // See the configuration options for more information:
+        // https://www.gatsbyjs.com/plugins/gatsby-plugin-google-gtag/
+        // https://www.gatsbyjs.com/docs/how-to/adding-common-features/adding-analytics/
+        //
+        // {
+        //     resolve: `gatsby-plugin-google-gtag`,
+        //     options: {
+        //         trackingIds: [GOOGLE_ANALYTICS_ID],
+        //         gtagConfig: {
+        //             anonymize_ip: true,
+        //         },
+        //         pluginConfig: {
+        //             head: true,
+        //             respectDNT: true,
+        //         },
+        //     },
+        // },
         "gatsby-plugin-react-helmet",
         {
             resolve: "gatsby-source-filesystem",
