@@ -20,9 +20,9 @@ def new_post(title, slug=nil, author=AUTHOR)
 
   content = <<~HEREDOC
   ---
-  title: #{title}
-  date: #{date_string}
-  author: #{author}
+  title: "#{title}"
+  date: "#{date_string}"
+  author: "#{author}"
   slug: "#{slug}"
   description: "#{title}"
   ---
