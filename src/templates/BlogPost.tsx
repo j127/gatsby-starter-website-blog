@@ -1,16 +1,17 @@
 import React from "react";
 import { Link, graphql } from "gatsby";
+import { MDXRenderer } from "gatsby-plugin-mdx";
 
 import Layout from "../components/layout/Layout";
 import SEO from "../components/seo/SEO";
 
-const BlogPostTemplate = ({ data, pageContext, location }) => {
-    const post = data.markdownRemark;
+const BlogPostTemplate = ({ data, pageContext }) => {
+    const post = data.mdx;
     const siteTitle = data.site.siteMetadata.title;
     const { previous, next } = pageContext;
 
     return (
-        <Layout location={location}>
+        <Layout>
             <SEO
                 title={post.frontmatter.title}
                 description={post.frontmatter.description || post.excerpt}
@@ -25,7 +26,9 @@ const BlogPostTemplate = ({ data, pageContext, location }) => {
                         </p>
                     </div>
                 </header>
-                <section dangerouslySetInnerHTML={{ __html: post.html }} />
+                <section>
+                    <MDXRenderer>{post.body}</MDXRenderer>
+                </section>
                 <hr />
                 <footer>{/* TODO: put author name and metadata here */}</footer>
             </article>
@@ -61,10 +64,10 @@ export const pageQuery = graphql`
                 title
             }
         }
-        markdownRemark(fields: { slug: { eq: $slug } }) {
+        mdx(fields: { slug: { eq: $slug } }) {
             id
             excerpt(pruneLength: 160)
-            html
+            body
             frontmatter {
                 title
                 date(formatString: "MMMM DD, YYYY")

@@ -7,15 +7,16 @@ import SEO from "../components/seo/SEO";
 
 export default function BlogPage({ data }) {
     // const siteTitle = data.site.siteMetadata.title;
-    const posts = data.allMarkdownRemark.edges;
+    const posts = data.allMdx.edges;
     return (
         <Layout>
-            <SEO title="Blog" />
+            <SEO title="Blog" description="Welcome to the blog." />
             <h1 className="title is-1">Blog</h1>
 
             <div className="blog-list">
                 {posts.map(({ node }) => {
-                    const title = node.frontmatter.title || node.fields.slug;
+                    console.log("node", node);
+                    const title = node.frontmatter.title;
 
                     return (
                         <article className="box" key={node.fields.slug}>
@@ -45,16 +46,17 @@ export default function BlogPage({ data }) {
 }
 
 export const pageQuery = graphql`
-    query {
+    query PostsQuery {
         site {
             siteMetadata {
                 title
             }
         }
-        allMarkdownRemark(sort: { fields: [frontmatter___date], order: DESC }) {
+        allMdx(sort: { fields: [frontmatter___date], order: DESC }) {
             edges {
                 node {
                     excerpt
+                    slug
                     fields {
                         slug
                     }
