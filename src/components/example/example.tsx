@@ -39,7 +39,7 @@ export default function Example({ title }: ExampleProps): JSX.Element {
             <h1 className="subtitle is-4">{title}</h1>
             <div className="columns">
                 <div className="column is-one-third">
-                    <p>{message ? message : <Spinner />}</p>
+                    <p>{message ? message : <Spinner theme="dots2" />}</p>
                 </div>
                 <div className="column">
                     {showImage ? (
