@@ -33,12 +33,14 @@ module.exports = {
                 : DEVELOPMENT_URL,
     },
     plugins: [
+        "gatsby-transformer-sharp",
+        "gatsby-plugin-sharp",
+        "gatsby-remark-images",
         {
             resolve: "gatsby-plugin-mdx",
             options: {
                 extensions: [".md", ".mdx"],
-                plugins: [
-                    "gatsby-remark-images",
+                gatsbyRemarkPlugins: [
                     {
                         // For more image-loading options, see the docs here:
                         // https://www.gatsbyjs.com/plugins/gatsby-remark-images/
@@ -207,8 +209,6 @@ module.exports = {
                 path: `${__dirname}/src/images`,
             },
         },
-        "gatsby-transformer-sharp",
-        "gatsby-plugin-sharp",
         `gatsby-plugin-sass`,
         {
             resolve: `gatsby-plugin-sass`,
