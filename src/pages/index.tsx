@@ -54,7 +54,7 @@ export default function IndexPage(_props: PageProps) {
                     <img
                         width="300"
                         height="300"
-                        src="https://placekitten.com/300/300"
+                        src="https://placekitten.com/298/300"
                         alt="cat"
                     />
                 </div>
@@ -67,7 +67,7 @@ export default function IndexPage(_props: PageProps) {
                         width="300"
                         height="150"
                         alt="placeholder kitten"
-                        src="https://placekitten.com/300/150"
+                        src="https://placekitten.com/299/150"
                     />
                     <p>
                         Ipsum cupiditate velit recusandae libero cumque Dolore
@@ -102,7 +102,7 @@ export default function IndexPage(_props: PageProps) {
                         width="300"
                         height="150"
                         alt="placeholder kitten"
-                        src="https://placekitten.com/300/150"
+                        src="https://placekitten.com/301/150"
                     />
                     <p>
                         Ipsum cupiditate velit recusandae libero cumque Dolore
@@ -120,7 +120,7 @@ export default function IndexPage(_props: PageProps) {
                         width="300"
                         height="150"
                         alt="placeholder kitten"
-                        src="https://placekitten.com/300/150"
+                        src="https://placekitten.com/300/149"
                     />
                     <p>
                         Ipsum cupiditate velit recusandae libero cumque Dolore
@@ -138,7 +138,7 @@ export default function IndexPage(_props: PageProps) {
                         width="300"
                         height="150"
                         alt="placeholder kitten"
-                        src="https://placekitten.com/300/150"
+                        src="https://placekitten.com/302/151"
                     />
                     <p>
                         Ipsum cupiditate velit recusandae libero cumque Dolore
@@ -155,7 +155,7 @@ export default function IndexPage(_props: PageProps) {
                         width="300"
                         height="150"
                         alt="placeholder kitten"
-                        src="https://placekitten.com/300/150"
+                        src="https://placekitten.com/298/152"
                     />
                     <p>
                         Ipsum cupiditate velit recusandae libero cumque Dolore
