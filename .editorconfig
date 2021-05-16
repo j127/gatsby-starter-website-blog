@@ -9,7 +9,7 @@ charset = utf-8
 trim_trailing_whitespace = true
 insert_final_newline = true
 
-[*.{rb,ru,ex,exs}]
+[*.{md,mdx,rb,ru,ex,exs}]
 indent_size = 2
 
 [{Gemfile}]
