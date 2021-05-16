@@ -239,35 +239,26 @@ module.exports = {
             resolve: `gatsby-plugin-purgecss`,
             options: {
                 printRejected: true,
-                whitelist: [
-                    "blockquote",
-                    "table",
-                    "th",
-                    "code",
-                    "tr",
-                    "td",
-                    "tbody",
-                    "thead",
-                    "content",
-                ],
-                ignore: [
-                    "prism.css",
-                    "prism-coy.css",
-                    "prism-dark.css",
-                    "prism-funky.css",
-                    "prism-okaidia.css",
-                    "prism-solarizedlight.css",
-                    "prism-tomorrow.css",
-                    "prism-twilight.css",
-                ], // keeps the code syntax highlighting
-                whitelistPatternsChildren: [
-                    /token$/,
-                    /^pre/,
-                    /^code/,
-                    /language-.*/,
-                ],
-                // Enable while using `gatsby develop`
-                // develop: true,
+                ignore: ["node_modules/prismjs/themes/prism.css", "prism.css"],
+                purgeCSSOptions: {
+                    safelist: {
+                        deep: [
+                            /blockquote/,
+                            /table/,
+                            /th/,
+                            /code/,
+                            /tr/,
+                            /td/,
+                            /tbody/,
+                            /thead/,
+                            /content/,
+                            /token$/,
+                            /^pre/,
+                            /^code/,
+                            /language-/,
+                        ],
+                    },
+                },
             },
         },
         {
