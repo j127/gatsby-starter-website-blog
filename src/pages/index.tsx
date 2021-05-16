@@ -25,6 +25,17 @@ export default function IndexPage(_props: PageProps) {
                         .
                     </p>
                     <p>
+                        The template supports MDX, so you can{" "}
+                        <Link to="/markdown/">
+                            write components in markdown
+                        </Link>
+                        , or{" "}
+                        <Link to="/blog/mdx-support/">
+                            embed JSX in markdown
+                        </Link>
+                        .
+                    </p>
+                    <p>
                         Ipsum similique ab nostrum maxime harum Eum accusantium
                         numquam possimus autem facilis Totam cupiditate aliquid
                         illum aperiam recusandae Esse quaerat consectetur

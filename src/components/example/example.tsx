@@ -25,7 +25,7 @@ export default function Example({ title }: ExampleProps): JSX.Element {
                 axios
                     .get("/data.json")
                     .then((res) => setMessage(res.data["message"])),
-            2000
+            1000
         );
     }, []);
 
