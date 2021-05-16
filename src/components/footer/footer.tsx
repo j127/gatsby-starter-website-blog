@@ -1,5 +1,5 @@
-import React from "react";
-import { Link } from "gatsby"
+import React, { useEffect, useState } from "react";
+import { Link } from "gatsby";
 
 // import "./footer.scss";
 

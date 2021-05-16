@@ -10,7 +10,7 @@ import "../../styles/main.scss";
 
 // TODO: this might need updating
 interface ILayoutProps {
-    location: WindowLocation;
+    // location: WindowLocation;
     // title: string;
     children?: any;
 }
