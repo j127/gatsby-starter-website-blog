@@ -38,6 +38,7 @@ module.exports = {
             options: {
                 extensions: [".md", ".mdx"],
                 plugins: [
+                    "gatsby-remark-images",
                     {
                         // For more image-loading options, see the docs here:
                         // https://www.gatsbyjs.com/plugins/gatsby-remark-images/
@@ -47,6 +48,8 @@ module.exports = {
                             wrapperStyle:
                                 "border: 1px solid #666; margin-left: 0 !important; margin-right: 0 !important; border-radius: 5px;",
                             // tracedSVG: true,
+                            // showCaptions: true,
+                            // markdownCaptions: true,
                         },
                     },
                     {
