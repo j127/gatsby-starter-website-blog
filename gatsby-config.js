@@ -109,7 +109,8 @@ module.exports = {
                                     },
                                     insertBefore: {
                                         function: {
-                                            superscript_keywords: /(superif|superelse)/,
+                                            superscript_keywords:
+                                                /(superif|superelse)/,
                                         },
                                     },
                                 },
