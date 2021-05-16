@@ -243,14 +243,29 @@ module.exports = {
                     "blockquote",
                     "table",
                     "th",
+                    "code",
                     "tr",
                     "td",
                     "tbody",
                     "thead",
                     "content",
                 ],
-                ignore: ["prism.css"], // keeps the code syntax highlighting
-                whitelistPatternsChildren: [/token$/, /^pre/, /^code/],
+                ignore: [
+                    "prism.css",
+                    "prism-coy.css",
+                    "prism-dark.css",
+                    "prism-funky.css",
+                    "prism-okaidia.css",
+                    "prism-solarizedlight.css",
+                    "prism-tomorrow.css",
+                    "prism-twilight.css",
+                ], // keeps the code syntax highlighting
+                whitelistPatternsChildren: [
+                    /token$/,
+                    /^pre/,
+                    /^code/,
+                    /language-.*/,
+                ],
                 // Enable while using `gatsby develop`
                 // develop: true,
             },
