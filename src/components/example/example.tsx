@@ -1,7 +1,6 @@
 import React, { useEffect, useState } from "react";
 import axios from "axios";
-
-import Spinner from "../spinner/spinner";
+import Spinner from "react-text-spinners";
 
 import "./example.scss";
 
