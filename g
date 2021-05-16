@@ -10,7 +10,8 @@
 require 'date'
 require 'slugify'
 
-# Put your name in the `AUTHOR` field
+# Put your name in the `AUTHOR` field and delete the message
+puts 'TODO: for best result, put your name in the AUTHOR field and then delete this line.'
 AUTHOR = '' || ENV["USER"]
 CONTENT_DIR = './content/blog'
 
@@ -32,7 +33,7 @@ def new_post(title, slug=nil, author=AUTHOR)
 
   dirname = "#{CONTENT_DIR}/#{date_string.slice(0, 10)}-#{slug}"
   Dir.mkdir(dirname)
-  File.open("#{dirname}/index.md", "w") { |f| f.write(content) }
+  File.open("#{dirname}/index.mdx", "w") { |f| f.write(content) }
   p "created new blog post at #{dirname}"
 end
 

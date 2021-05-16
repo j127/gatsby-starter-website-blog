@@ -1,14 +1,14 @@
 const path = require("path");
 const { createFilePath } = require("gatsby-source-filesystem");
 
-exports.createPages = async ({ graphql, actions }) => {
+exports.createPages = async ({ actions, graphql }) => {
     const { createPage } = actions;
 
-    const blogPost = path.resolve("./src/templates/blogPost.tsx");
+    const BlogPostTemplate = path.resolve("./src/templates/BlogPost.tsx");
     const result = await graphql(
         `
             {
-                allMarkdownRemark(
+                allMdx(
                     sort: { fields: [frontmatter___date], order: DESC }
                     limit: 1000
                 ) {
@@ -32,7 +32,7 @@ exports.createPages = async ({ graphql, actions }) => {
         throw result.errors;
     }
 
-    const posts = result.data.allMarkdownRemark.edges;
+    const posts = result.data.allMdx.edges;
     posts.forEach((post, index) => {
         const previous =
             index === posts.length - 1 ? null : posts[index + 1].node;
@@ -40,7 +40,7 @@ exports.createPages = async ({ graphql, actions }) => {
 
         createPage({
             path: post.node.fields.slug,
-            component: blogPost,
+            component: BlogPostTemplate,
             context: {
                 slug: post.node.fields.slug,
                 previous,
@@ -53,7 +53,7 @@ exports.createPages = async ({ graphql, actions }) => {
 exports.onCreateNode = ({ node, actions, getNode }) => {
     const { createNodeField } = actions;
 
-    if (node.internal.type === "MarkdownRemark") {
+    if (node.internal.type === "Mdx") {
         // The path is built from the slug in the blog post frontmatter.
         const value = `/blog/${node.frontmatter.slug}/`;
 

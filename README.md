@@ -62,6 +62,8 @@ Override Bulma variables in the `src/styles/_variables.scss` file. See the notes
 
 #### Tips
 
+The markdown in blog posts uses MDX. It's [markdown with JSX](https://www.gatsbyjs.com/docs/how-to/routing/mdx/).
+
 If you need a responsive table in a blog post (written with markdown), wrap the markdown table with a [`table-container` div](https://bulma.io/documentation/elements/table/#table-container) like this:
 
 ```

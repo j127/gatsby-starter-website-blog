@@ -33,24 +33,10 @@ module.exports = {
                 : DEVELOPMENT_URL,
     },
     plugins: [
-        // This loads the blog posts
         {
-            resolve: "gatsby-source-filesystem",
+            resolve: "gatsby-plugin-mdx",
             options: {
-                path: `${__dirname}/content/blog`,
-                name: "blog",
-            },
-        },
-        {
-            resolve: "gatsby-source-filesystem",
-            options: {
-                path: `${__dirname}/content/assets`,
-                name: "assets",
-            },
-        },
-        {
-            resolve: `gatsby-transformer-remark`,
-            options: {
+                extensions: [".md", ".mdx"],
                 plugins: [
                     {
                         // For more image-loading options, see the docs here:
@@ -138,6 +124,21 @@ module.exports = {
                     },
                     `gatsby-remark-smartypants`,
                 ],
+            },
+        },
+        // This loads the blog posts
+        {
+            resolve: "gatsby-source-filesystem",
+            options: {
+                path: `${__dirname}/src/content/blog`,
+                name: "blog",
+            },
+        },
+        {
+            resolve: "gatsby-source-filesystem",
+            options: {
+                path: `${__dirname}/src/content/assets`,
+                name: "assets",
             },
         },
         {
@@ -268,8 +269,8 @@ module.exports = {
                 `,
                 feeds: [
                     {
-                        serialize: ({ query: { site, allMarkdownRemark } }) => {
-                            return allMarkdownRemark.edges.map((edge) => {
+                        serialize: ({ query: { site, allMdx } }) => {
+                            return allMdx.edges.map((edge) => {
                                 return Object.assign(
                                     {},
                                     edge.node.frontmatter,
@@ -294,7 +295,7 @@ module.exports = {
                         },
                         query: `
                             {
-                                allMarkdownRemark(sort: { order: DESC, fields: [frontmatter___date] }) {
+                                allMdx(sort: { order: DESC, fields: [frontmatter___date] }) {
                                     edges {
                                         node {
                                             excerpt

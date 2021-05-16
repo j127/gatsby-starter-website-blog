@@ -48,6 +48,7 @@
         "gatsby-plugin-mdx": "^2.5.0",
         "gatsby-plugin-no-sourcemaps": "^3.3.0",
         "gatsby-plugin-offline": "^4.3.0",
+        "gatsby-plugin-page-creator": "^3.5.0",
         "gatsby-plugin-purgecss": "^6.0.1",
         "gatsby-plugin-react-helmet": "^4.3.0",
         "gatsby-plugin-sass": "^4.3.0",
@@ -58,13 +59,13 @@
         "gatsby-remark-responsive-iframe": "^4.0.0",
         "gatsby-remark-smartypants": "^4.0.0",
         "gatsby-source-filesystem": "^3.3.0",
-        "gatsby-transformer-remark": "^4.0.0",
         "gatsby-transformer-sharp": "^3.3.0",
         "prismjs": "^1.23.0",
         "react": "^17.0.2",
         "react-dom": "^17.0.2",
         "react-helmet": "^6.1.0",
-        "sass": "^1.32.8"
+        "sass": "^1.32.8",
+        "text-spinners": "^1.0.5"
     },
     "devDependencies": {
         "@types/node": "^14.14.41",
