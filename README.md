@@ -78,6 +78,20 @@ If you need a responsive table in a blog post (written with markdown), wrap the 
 
 Jest and Cypress are installed. See the [how to write tests](https://www.gatsbyjs.com/docs/how-to/testing/) section of the documentation.
 
+#### Cypress
+
+Write tests in the `cypress` directory (see the included examples). Run the tests with:
+
+```text
+$ npm run cy:open
+```
+
+See [this page](https://www.gatsbyjs.com/docs/how-to/testing/end-to-end-testing/) for more information.
+
+#### Jest
+
+See the [Gatsby/Jest docs](https://www.gatsbyjs.com/docs/how-to/testing/unit-testing/). There's also a page on [testing React components](https://www.gatsbyjs.com/docs/how-to/testing/testing-react-components/).
+
 ### Sourcemaps
 
 Sourcemaps are removed by default (see [here](https://forum.codeselfstudy.com/t/how-to-avoid-publishing-your-frontend-code-and-comments-with-react/2418)). If you want to add sourcemaps in production, then remove the `gatsby-plugin-no-sourcemaps` plugin from `gatsby-config.js` file.
