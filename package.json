@@ -1,6 +1,6 @@
 {
     "name": "@j127/gatsby_website_starter",
-    "version": "0.5.0",
+    "version": "1.0.0",
     "description": "Everything you need for a basic website + blog with Gatsby 3",
     "main": "index.js",
     "scripts": {
