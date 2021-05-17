@@ -15,7 +15,7 @@ To customize the TypeScript configuration, see [this page](https://www.gatsbyjs.
 ## tl;dr
 
 ```text
-$ gatsby new project_name https://github.com/j127/gatsby_website_starter
+$ gatsby new project_name https://github.com/j127/gatsby-starter-website-blog
 ```
 
 Then edit your new site.
@@ -41,7 +41,7 @@ and/or run `gatsby telemetry --disable` in a terminal window.
 Start a new project, changing `project_name` to the desired name of your app:
 
 ```text
-$ gatsby new project_name https://github.com/j127/gatsby_website_starter
+$ gatsby new project_name https://github.com/j127/gatsby-starter-website-blog
 ```
 
 Then `cd` into the project directory and start coding.
