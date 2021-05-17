@@ -24,10 +24,9 @@ const Navbar = ({ siteTitle }) => {
         <nav className="navbar is-dark">
             <div className="container">
                 <div className="navbar-brand">
-                    <Link to="/" className="navbar-item">
+                    <Link to="/" className="navbar-item site-name">
                         {siteTitle}
                     </Link>
-
                     <div
                         className="navbar-burger burger"
                         role="button"
