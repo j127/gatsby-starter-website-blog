@@ -1,5 +1,7 @@
 # Gatsby Website Starter
 
+## Update: this repo is outdated, so I wouldn't recommend it. Look at the official Gatsby quickstart instead.
+
 Everything you need for a basic website + blog with Gatsby.js. ([preview](https://gatsby-website-starter.netlify.app/))
 
 **Requirements:** Node 12.13.0 or above.
